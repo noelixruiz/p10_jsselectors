@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p10_jsselectors</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".grande").click(function(){
+                $(".grande").hide();
+            });
+            $(".pequeño").click(function(){
+                $(".grande").show();
+            });
+        });
+    </script>
+    <style>
+        .grande{
+            position: absolute;
+            top: 0;
+             height: auto;
+             width: 70%;
+         }
+         #gran{
+             width: 15%;
+             height: auto;
+         }
+         .pequeño{
+             width: 100%;
+             height: auto;
+         }
+         #peque{
+             width: 70%;
+             height: auto;
+         }
+    </style>
+</head>
+<body>
+    <div id="peque">
+    <img class="pequeño" src="img/pequeña.jpg" alt="">
+    </div>
+    <div id="gran">
+    <img class="grande" src="img/grande.jpg" alt="">
+    </div>
+</body>
+</html>
